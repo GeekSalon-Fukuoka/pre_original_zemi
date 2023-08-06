@@ -6,5 +6,5 @@ tokenizer = AutoTokenizer.from_pretrained("jarvisx17/japanese-sentiment-analysis
 
 def predict_sentiment(text):
     nlp = pipeline("sentiment-analysis", model=model, tokenizer=tokenizer)
-    result = nlp(<<<ここに回答を記入>>>)
+    result = nlp(text)
     return result
